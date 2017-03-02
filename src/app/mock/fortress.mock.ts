@@ -19,49 +19,65 @@ export const FORTRESSES: Fortress[] = [
         id: 1006,
         name: 'Golconda Fort',
         country: 'India',
-        defaultImage: {id: 2006, url: 'app/mock/images/golconda-fort-2.jpg', caption: ''}
+        defaultImage: {id: 2006, url: 'app/mock/images/golconda-fort-2.jpg', caption: ''},
+        description: '',
+        history: ''
     },
      {
         id: 1007,
         name: 'Khotyn',
         country: 'Ukraine',
-        defaultImage: {id: 2007, url: 'app/mock/images/khotyn-1.jpg', caption: ''}
+        defaultImage: {id: 2007, url: 'app/mock/images/khotyn-1.jpg', caption: ''},
+        description: '',
+        history: ''
     },
     {
         id: 1008,
         name: 'Roquetaillade',
         country: 'France',
-        defaultImage: {id: 2008, url: 'app/mock/images/roquetaillade-1.jpg', caption: ''}
+        defaultImage: {id: 2008, url: 'app/mock/images/roquetaillade-1.jpg', caption: ''},
+        description: '',
+        history: ''
     },
      {
         id: 1001,
         name: 'Akkerman Fortress',
         country: 'Ukraine',
-        defaultImage: {id:2001, url: 'app/mock/images/akkerman-fortress-2.jpg', caption: ''}
+        defaultImage: {id:2001, url: 'app/mock/images/akkerman-fortress-2.jpg', caption: ''},
+        description: '',
+        history: ''
     },
     {
         id: 1003,
         name: 'Veste Rothenberg',
         country: 'Germany',
-        defaultImage: {id: 2003, url: 'app/mock/images/veste-rothenberg-1.jpg', caption: ''}  
+        defaultImage: {id: 2003, url: 'app/mock/images/veste-rothenberg-1.jpg', caption: ''},
+        description: '',
+        history: ''
     },
     {
         id: 1004,
         name: 'Ribat of Monastir',
         country: 'Tunisia',
-        defaultImage: {id: 2004, url: 'app/mock/images/ribat-of-monastir-1.jpg', caption: ''}  
+        defaultImage: {id: 2004, url: 'app/mock/images/ribat-of-monastir-1.jpg', caption: ''},
+        description: '',
+        history: '' 
     },
     {
         id: 1009,
         name: 'Dover',
         country: 'England',
-        defaultImage: {id: 2009, url: 'app/mock/images/dover-1.jpg', caption: ''}  
+        defaultImage: {id: 2009, url: 'app/mock/images/dover-1.jpg', caption: ''},
+        description: '',
+        history: '' 
     },
     {
         id: 1002,
         name: 'Boldogko',
         country: 'Hungary',
-        defaultImage: {id: 2002, url: 'app/mock/images/boldogko-1.jpg', caption: ''}  
+        defaultImage: {id: 2002, url: 'app/mock/images/boldogko-1.jpg', caption: ''},
+        description: '',
+        history: ''
     }
     
 ]
