@@ -1,0 +1,24 @@
+<article *ngIf="fortress" class="col-md-8">
+    <button (click)="goBack()">Back</button>
+    <h2>
+        {{fortress.name}}
+    </h2>
+    <figure>
+        <img src="{{fortress.defaultImage.url}}">
+        <figcaption>
+            {{fortress.defaultImage.caption}}
+        </figcaption>
+    </figure>
+    <section>
+        <h3>Description</h3>
+        <p>
+            {{fortress.description}}
+        </p>
+    </section>
+    <section>
+        <h3>History</h3>
+        <p>
+        {{fortress.history}}  
+        </p>
+    </section>
+</article>
