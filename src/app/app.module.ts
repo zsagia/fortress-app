@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FortressService } from './service/fortress.service';
+import { MockFortressService } from './mock/service/mock.fortress.service';
 import { FortressComponent } from './fortress/fortress.component';
 import { MainViewComponent } from './main/main.component';
 import { DetailedViewComponent } from './detailed/detailed.component';
@@ -24,8 +24,8 @@ import { DetailedViewComponent } from './detailed/detailed.component';
     FormsModule,
     HttpModule
   ],
-  providers: [FortressService],
-  bootstrap: [AppComponent]
+  providers: [ MockFortressService ],
+  bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }

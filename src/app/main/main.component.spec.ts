@@ -1,28 +1,35 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MainComponent } from './main.component';
+import { MainViewComponent } from './main.component';
+import { FortressComponent } from '../fortress/fortress.component';
+import { FortressService } from '../fortress/service/fortress.service';
+
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('MainComponent', () => {
-  let component: MainComponent;
-  let fixture: ComponentFixture<MainComponent>;
+    let component: MainViewComponent;
+    let fixture: ComponentFixture<MainViewComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MainComponent ]
-    })
-    .compileComponents();
+    beforeEach(async(() => {
+        let testBed = TestBed.configureTestingModule({
+            declarations: [ MainViewComponent, FortressComponent ],
+            providers: [ FortressService ],
+            imports: [ RouterTestingModule ]
+        });
+    
+        testBed.compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainComponent);
+    fixture = TestBed.createComponent(MainViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', fakeAsync(() => {
     expect(component).toBeTruthy();
-  });
+  }));
 });

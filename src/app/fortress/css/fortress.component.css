@@ -1,0 +1,24 @@
+:host img.main {
+    width: 100%;
+    height: 100%;
+}
+:host .type {
+    background-color: #FFF;
+    border: 4px solid #286090;
+    border-radius: 500px;
+    color: #FFF;
+    font-size: 50px;
+    height: 96px;
+    line-height: 120px;
+    margin: -64px 0 -10px 0;
+    order: 4px solid #FFF;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    width: 96px;
+}
+
+:host .type img {
+    margin-bottom: 40px;
+}

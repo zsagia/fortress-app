@@ -3,21 +3,30 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { DetailedComponent } from './detailed.component';
+import { DetailedViewComponent } from './detailed.component';
+import { FortressService } from '../fortress/service/fortress.service';
+
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('DetailedComponent', () => {
-  let component: DetailedComponent;
-  let fixture: ComponentFixture<DetailedComponent>;
+  let component: DetailedViewComponent;
+  let fixture: ComponentFixture<DetailedViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailedComponent ]
+        declarations: [ DetailedViewComponent ],
+        providers: [
+            FortressService
+        ],
+        imports: [
+            RouterTestingModule
+        ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DetailedComponent);
+    fixture = TestBed.createComponent(DetailedViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

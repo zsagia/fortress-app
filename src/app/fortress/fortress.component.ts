@@ -1,17 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from "@angular/router";
 
-import { Fortress } from '../model/fortress.model';
+import { Fortress } from './model/fortress.model';
 
 @Component ({
     selector: 'fortress-display',
-    templateUrl: '../template/fortress.component.html',
-    styles: [`
-        :host img {
-            width: 100%;
-            height: 100%;
-        }
-    `]
+    templateUrl: './template/fortress.component.html',
+    styleUrls: [
+        './css/fortress.component.css'
+        ]
 })
 
 export class FortressComponent implements OnInit {
@@ -21,6 +18,8 @@ export class FortressComponent implements OnInit {
     @Input()
     fortressId: number;
 
+    public iconUrl: String;
+
     constructor(private router: Router) {
 
     }
@@ -29,10 +28,24 @@ export class FortressComponent implements OnInit {
         if (this.fortressId) {
             this.getFortress();
         }
+
+        this.setIconUrl();
     }
 
     getFortress(): void {
 
+    }
+
+    setIconUrl() {
+        let iconUrl = 'assets/icons/';
+
+        if (this.fortress.type === Fortress.TYPE_CASTLE) {
+            iconUrl = iconUrl + 'castle.png';
+        } else {
+            iconUrl = iconUrl + 'fortress.png';
+        }
+
+        this.iconUrl =  iconUrl;
     }
 
     goToDetail(): void{

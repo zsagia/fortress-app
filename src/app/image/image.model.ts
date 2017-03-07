@@ -6,6 +6,6 @@ export class Image {
     constructor(id: number, url: String, caption: String) {
         this.id = id;
         this.url = url;
-        this.caption = 
+        this.caption = caption;
     }
 }
