@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Fortress } from '../fortress/model/fortress.model';
-import { MockFortressService } from '../mock/service/mock.fortress.service';
+import { FortressServiceImpl } from '../fortress/service/fortress.service.impl';
 
 @Component({
   selector: 'fortress-detail',
@@ -15,7 +15,7 @@ export class DetailedViewComponent implements OnInit {
     fortress: Fortress;
 
   constructor (
-        private fortressService: MockFortressService,
+        private fortressService: FortressServiceImpl,
         private route: ActivatedRoute,
         private location: Location) {
     }

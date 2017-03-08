@@ -1,4 +1,4 @@
-import { Image } from '../../image/image.model';
+import { Image } from '../../image/model/image.model';
 
 export class Fortress {
     public static readonly TYPE_CASTLE = "castle";

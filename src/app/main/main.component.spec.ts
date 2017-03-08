@@ -5,7 +5,7 @@ import { DebugElement } from '@angular/core';
 
 import { MainViewComponent } from './main.component';
 import { FortressComponent } from '../fortress/fortress.component';
-import { FortressService } from '../fortress/service/fortress.service';
+import { MockFortressServiceImpl } from '../mock/service/mock.fortress.service.impl';
 
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -16,7 +16,7 @@ describe('MainComponent', () => {
     beforeEach(async(() => {
         let testBed = TestBed.configureTestingModule({
             declarations: [ MainViewComponent, FortressComponent ],
-            providers: [ FortressService ],
+            providers: [ MockFortressServiceImpl ],
             imports: [ RouterTestingModule ]
         });
     

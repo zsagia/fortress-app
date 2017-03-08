@@ -1,5 +1,5 @@
 
-<div class="fortress-card thumbnail">
+<div *ngIf="hidden" class="fortress-card thumbnail">
     <img src="{{fortress.defaultImage.url}}" class="main">
     <div class="type">
         <span><img [src] = "iconUrl" width="60" height="60"></span>

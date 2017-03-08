@@ -5,10 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MockFortressService } from './mock/service/mock.fortress.service';
+import { FortressServiceImpl } from './fortress/service/fortress.service.impl';
 import { FortressComponent } from './fortress/fortress.component';
 import { MainViewComponent } from './main/main.component';
 import { DetailedViewComponent } from './detailed/detailed.component';
+import { CarouselModule } from 'ng2-bootstrap/carousel'
 
 @NgModule({
   declarations: [
@@ -22,9 +23,10 @@ import { DetailedViewComponent } from './detailed/detailed.component';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CarouselModule.forRoot()
   ],
-  providers: [ MockFortressService ],
+  providers: [ FortressServiceImpl ],
   bootstrap: [ AppComponent ]
 })
 

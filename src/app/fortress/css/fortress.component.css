@@ -18,7 +18,9 @@
     font-weight: 500;
     width: 96px;
 }
-
 :host .type img {
     margin-bottom: 40px;
+}
+:host h3 {
+    text-align: center;
 }

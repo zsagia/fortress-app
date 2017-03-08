@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { DetailedViewComponent } from './detailed.component';
-import { FortressService } from '../fortress/service/fortress.service';
+import { MockFortressServiceImpl } from '../mock/service/mock.fortress.service.impl';
 
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -16,7 +16,7 @@ describe('DetailedComponent', () => {
     TestBed.configureTestingModule({
         declarations: [ DetailedViewComponent ],
         providers: [
-            FortressService
+            MockFortressServiceImpl
         ],
         imports: [
             RouterTestingModule

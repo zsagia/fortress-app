@@ -20,6 +20,8 @@ export class FortressComponent implements OnInit {
 
     public iconUrl: String;
 
+    private hidden: boolean = true;
+
     constructor(private router: Router) {
 
     }

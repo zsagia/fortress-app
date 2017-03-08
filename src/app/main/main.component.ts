@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { Fortress } from '../fortress/model/fortress.model';
 import { FortressComponent } from '../fortress/fortress.component';
-import { MockFortressService } from '../mock/service/mock.fortress.service';
+import { FortressServiceImpl } from '../fortress/service/fortress.service.impl';
 
 @Component({
   selector: 'main-display',
@@ -14,7 +14,7 @@ export class MainViewComponent {
     title: String = 'Fortresses';
     fortresses: Array<Fortress> = [];
 
-    constructor(private fortressService: MockFortressService) {
+    constructor(private fortressService: FortressServiceImpl) {
        this.getFortresses();  
     }
 
